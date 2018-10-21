@@ -1,0 +1,21 @@
+//		waitForElementToBeVisible(selectWorkingStatus);
+		//selectWorkingStatus.click();
+//		wait.until(ExpectedConditions.visibilityOf(selectWorkingStatus)); 
+//		wait.until(ExpectedConditions.elementToBeClickable(selectWorkingStatus));
+		
+		Select workingStatusSelect = new Select(selectWorkingStatus);
+		List<WebElement> workingStatusOptions = workingStatusSelect.getOptions();
+		System.out.println(workingStatusOptions.size());
+		for(WebElement workingStatus : workingStatusOptions){
+			String visibleText = workingStatus.getText();
+			System.out.println(visibleText);
+			if(visibleText.equals(""))
+			{
+				System.out.println("elloooooo");
+			}
+			else {
+				workingStatusSelect.selectByVisibleText("Working");
+				workingStatusTextBox.sendKeys(visibleText);
+			}
+//			break;
+		}

@@ -19,3 +19,43 @@
 			}
 //			break;
 		}
+		
+		
+		
+		
+		
+public void chooseWorkingstatus() {
+		waitAndClick(workingStatusTextBox);
+		//waitAndClick(selectWorkingStatus);
+		waitAndClick(selectWorkingStatus);
+		Select workingStatusSelect = new Select(selectWorkingStatus);
+		workingStatusSelect.selectByValue("6230e12c-68d8-45d5-8f02-1d3997713150");
+		//waitForElementToBeVisible(selectWorkingStatus);
+		//String js = "document.getElementByName('answers')[0].style.display='none';";
+//		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true).style.display='block';", selectWorkingStatus);
+//		waitAndClick(selectWorkingStatus);
+		//((JavascriptExecutor) driver).executeScript("document.getElementByName('answers').data-placeholder='Studying or working?'.style.display='block';");
+	
+//		List<WebElement> workingStatusOptions = workingStatusSelect.getOptions();
+//		System.out.println(workingStatusOptions.size());
+//		for(WebElement workingStatus : workingStatusOptions){
+//			
+//			Actions action = new Actions(driver);
+//			action.moveToElement(workingStatus).sendKeys(Keys.TAB);
+//			String visibleText = workingStatus.getText();
+//			System.out.println(visibleText);
+////			if(visibleText.equals(""))
+////			{
+////				workingStatus.sendKeys("Working");
+////			}
+////			else {
+////				workingStatusSelect.selectByVisibleText("Working");
+////				workingStatusTextBox.sendKeys(visibleText);
+////			}
+////			break;
+//		}
+//		workingStatusSelect.selectByIndex(1); 
+//		workingStatusSelect.selectByVisibleText("Working");
+//		workingStatusTextBox.sendKeys("Working");
+		
+	}

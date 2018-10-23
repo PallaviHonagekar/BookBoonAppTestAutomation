@@ -1,10 +1,9 @@
 package constants;
 
 public class Constant {
-	public static final String GECKO_DRIVER = "E:\\Drivers\\firefox\\geckodriver-v0.23.0-win64\\geckodriver.exe";
+	public static final String IE_DRIVER = "E:\\Drivers\\IEDriverServer.exe";
 	public static final String URL_SIGN_IN = "https://bookboon.com/";
 	
-	public  static final String DRIVER = "driver";
 	
 	public static final String BOOK_NAME_DATA_PROVIDER = "BookNameDataProvider";
 	
